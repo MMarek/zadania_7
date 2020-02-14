@@ -1,13 +1,17 @@
 const allImages = document.querySelectorAll('img');
-const buttonDisappear = document.querySelector('hideButton');
+// console.log(allImages);
+const buttonDisappear = document.querySelector('#hideButton');
+// console.log(buttonDisappear);
 const buttonShow = document.querySelector('#showButton');
+// console.log(buttonShow);
 const inputTag = document.querySelector('#tagInput');
+// console.log(inputTag);
 
 buttonShow.addEventListener('click', function () {
 
     let inputValue = inputTag.value;
 
-    for (let i = 0; i < allImages.length; i++) {
+    for (let i = 11; i < allImages.length; i++) {
         let imageTags = allImages[i].dataset.tag;
         let ifExist = imageTags.indexOf(inputValue);
         if (ifExist !== -1 && allImages[i].className === 'invisible') {
@@ -20,3 +24,18 @@ buttonShow.addEventListener('click', function () {
     }
 });
 
+buttonDisappear.addEventListener('click',function () {
+    let inputValue = inputTag.value;
+
+    for (let i = 0; i < allImages.length; i++) {
+        let imageTags = allImages[i].dataset.tag.split(',');
+        let ifExists = imageTags.indexOf(inputValue);
+        if (ifExists !== -1) {
+            allImages[i].classList.add('invisible');
+        }
+    }
+
+    if (inputTag.value) {
+        inputTag.value = '';
+    }
+});
