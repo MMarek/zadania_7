@@ -24,3 +24,15 @@ Po prostu - Slider :)
 #
 ### -zad.4
 `Galeria` - po naciśnięciu miniatury zdjęcia, pojawia się / zostaje dodany nowy element w trybie pełnowkranowym.
+
+#
+### -zad.5
+Galeria pozwalająca na chowanie obrazków z odpowiednimi tagami.
+Po wpisaniu tagu i kliknięciu guzika, obrazki opisane znikają/pojawiają się.
+##-dokończ
+
+#
+### -zad.6
+```JavaScript
+MENU
+```
