@@ -15,3 +15,8 @@ Zasada rozpoznania i walidacji kart:
 - Visa zaczyna się od cyfry 4 i mają od `13 - 16` cyfr
 - Mastercard zaczyna się od cyfry 5 i ma równo `16` cyfr
 - American Express zaczyna się od cyfry 3, następna musi być 4 lub 7 i mają równo `15` cyfr
+#
+### -zad.3
+```JavaScript
+Po prostu - Slider :)
+```

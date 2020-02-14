@@ -5,3 +5,16 @@
 .success-message {
     color: #3D9970;
 }
+
+
+.slider ul{
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible{
+    display: inline-block;
+}
