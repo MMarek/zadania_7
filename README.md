@@ -20,3 +20,7 @@ Zasada rozpoznania i walidacji kart:
 ```JavaScript
 Po prostu - Slider :)
 ```
+
+#
+### -zad.4
+`Galeria` - po naciśnięciu miniatury zdjęcia, pojawia się / zostaje dodany nowy element w trybie pełnowkranowym.
