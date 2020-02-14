@@ -1,6 +1,6 @@
 // const allListElements = document.querySelectorAll('li'); // task03
 
-const bodyElement = document.querySelector('body');
+const bodyElement = document.querySelector('.gallery');
 console.log(bodyElement);
 for (let i = 6; i < allListElements.length; i++) {
     allListElements[i].addEventListener('click',function () {
