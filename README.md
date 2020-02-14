@@ -7,3 +7,11 @@ Formularz i walidacja zwracająca komunikaty o błędach gdy następujące warun
 - `Nazwisko` jest dłuższe niż 6 znaków
 - `Hasła` są identyczne i nie puste
 - `Checkbox` jest zaznaczony
+#
+### -zad.2
+Walidacja kart kredytowych wpisywanych w formularz, `w czasie rzeczywistym`,
+poprawność karty pojawia się po wpisaniu odpowiedniej liczby cyfr.
+Zasada rozpoznania i walidacji kart:
+- Visa zaczyna się od cyfry 4 i mają od `13 - 16` cyfr
+- Mastercard zaczyna się od cyfry 5 i ma równo `16` cyfr
+- American Express zaczyna się od cyfry 3, następna musi być 4 lub 7 i mają równo `15` cyfr

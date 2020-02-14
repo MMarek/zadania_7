@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }else{
             typeElement.innerText = '';
         }
-
+        setBorder(this, typeElement.innerText, number.length);
+        typeElement.innerText += '(' + number.length + ')'
     })
 });
 

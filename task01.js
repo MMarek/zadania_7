@@ -44,5 +44,23 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
 });
+
+function setBorder(element, type, length) {
+    let color = 'red';
+    if (type === 'Visa') {
+        if (length >= 13 && length <= 16) {
+            color = 'green';
+        }
+    } else if (type == 'Master Card') {
+        if (length === 16) {
+            color = 'green';
+        }
+    } else if (type == 'American Express') {
+        if (length === 15) {
+            color = 'green';
+        }
+    }
+    element.style.border = '1px solid ' + color;
+}
+
