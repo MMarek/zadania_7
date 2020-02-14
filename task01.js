@@ -16,6 +16,17 @@ document.addEventListener('DOMContentLoaded', function () {
             errors.push('Imię za krótkie')
         }
 
+        const surnameVal = this.elements.surname.value;
+        if (surnameVal.length < 6) {
+            errors.push('Nazwisko za krótkie')
+        }
+
+        const pass1Val = this.elements.pass1.value;
+        const pass2Val = this.elements.pass2.value;
+        if (pass1Val !== pass2Val || pass1Val === '') {
+            errors.push('Hasła nie są identyczne')
+        }
+
         const agreeVal = this.elements.agree.checked;
         if (!agreeVal) {
             errors.push('Zaakceptuj warunki');
