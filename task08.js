@@ -1,8 +1,13 @@
 const inputWithTask = document.getElementById('taskInput');
+console.log(inputWithTask);
 const buttonToAddTask = document.getElementById('addTaskButton');
+console.log(buttonToAddTask);
 const listWithTask = document.getElementById('taskList');
-const buttonToRemoveDoneTasks= document.getElementById('removeFinishedTaskButton');
-const counterTasks = document.getElementById('.counter');
+console.log(listWithTask);
+const buttonToRemoveDoneTasks = document.getElementById('removeFinishedTasksButton');
+console.log(buttonToRemoveDoneTasks);
+const counterTasks = document.getElementById('counter');
+console.log(counterTasks);
 
 let counter = 0;
 
@@ -10,9 +15,9 @@ buttonToAddTask.addEventListener('click', function () {
 
     if (inputWithTask.value.length < 5) {
         console.log('Za mało znaków')
-    }else if (inputWithTask.value.length > 100) {
+    } else if (inputWithTask.value.length > 100) {
         console.log('Za dużo znaków')
-    }else{
+    } else {
         const newTask = document.createElement('li');
         listWithTask.appendChild(newTask);
 
@@ -33,13 +38,21 @@ buttonToAddTask.addEventListener('click', function () {
         counter += 1;
         counterTasks.innerText = 'Number of tasks: ' + counter;
 
-        buttonComplete.addEventListener('click',function () {
+        buttonComplete.addEventListener('click', function () {
             if (newTask.classList.contains('taskDone')) {
                 newTask.classList.remove('taskDone');
-            }else{
+            } else {
                 newTask.classList.add('taskDone');
+            }
+        });
+
+        buttonDelete.addEventListener('click', function () {
+            if (newTask.classList.contains('taskDone')) {
+                newTask.parentElement.removeChild(newTask);
+                counter -= 1;
+                counterTasks.innerText = 'Number of tasks: ' + counter;
             }
         })
     }
-
-})
+inputWithTask.value = '';
+});
