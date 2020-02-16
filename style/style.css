@@ -18,3 +18,23 @@
 .slider .visible{
     display: inline-block;
 }
+
+
+
+
+.tooltip {
+    text-decoration: underline;
+    color: darkblue;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipText {
+    position: absolute;
+    top: 100%;
+    display: block;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    z-index: 1;
+}

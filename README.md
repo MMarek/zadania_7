@@ -36,3 +36,9 @@ Po wpisaniu tagu i kliknięciu guzika, obrazki opisane znikają/pojawiają się.
 ```JavaScript
 MENU - po kliknięciu, elementy się chowają.
 ```
+
+#
+### -zad.7
+```JavaScript
+Tooltipy - małe okienka wyskakujące po najechaniu na text
+```
