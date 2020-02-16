@@ -19,5 +19,27 @@ buttonToAddTask.addEventListener('click', function () {
         const mewHeadling = document.createElement('h1');
         mewHeadling.innerText = inputWithTask.value;
         newTask.appendChild(mewHeadling);
+
+        const buttonDelete = document.createElement('button');
+        buttonDelete.innerText = 'Delete';
+        buttonDelete.classList.add('Delete');
+        newTask.appendChild(buttonDelete);
+
+        const buttonComplete = document.createElement('button');
+        buttonComplete.innerText = 'Complete';
+        buttonComplete.classList.add('Complete');
+        newTask.appendChild(buttonComplete);
+
+        counter += 1;
+        counterTasks.innerText = 'Number of tasks: ' + counter;
+
+        buttonComplete.addEventListener('click',function () {
+            if (newTask.classList.contains('taskDone')) {
+                newTask.classList.remove('taskDone');
+            }else{
+                newTask.classList.add('taskDone');
+            }
+        })
     }
+
 })
