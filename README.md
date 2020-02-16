@@ -34,5 +34,5 @@ Po wpisaniu tagu i kliknięciu guzika, obrazki opisane znikają/pojawiają się.
 #
 ### -zad.6
 ```JavaScript
-MENU
+MENU - po kliknięciu, elementy się chowają.
 ```

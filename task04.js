@@ -6,7 +6,7 @@ for (let i = 6; i < allListElements.length; i++) {
     allListElements[i].addEventListener('click',function () {
 
         let image = this.querySelector('img');
-        // console.log(image.src);
+        console.log(image.src);
 
         let newDiv = document.createElement('div');
         newDiv.classList.add('fullScreen');
