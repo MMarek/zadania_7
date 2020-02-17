@@ -48,3 +48,6 @@ Tooltipy - małe okienka wyskakujące po najechaniu na text
 ```JavaScript
 Lista zadań do zrobienia. Dodajemy usuwamy, zatwierdzamy zadania z listy.
 ```
+
+##
+Całość do wglądu na: https://mmarek.github.io/zadania_7/index.html :)
