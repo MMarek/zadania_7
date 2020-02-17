@@ -42,3 +42,9 @@ MENU - po kliknięciu, elementy się chowają.
 ```JavaScript
 Tooltipy - małe okienka wyskakujące po najechaniu na text
 ```
+
+#
+### -zad.8
+```JavaScript
+Lista zadań do zrobienia. Dodajemy usuwamy, zatwierdzamy zadania z listy.
+```

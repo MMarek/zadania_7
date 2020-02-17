@@ -1,5 +1,5 @@
 const allImages = document.querySelectorAll('img');
-// console.log(allImages);
+console.log(allImages);
 const buttonDisappear = document.querySelector('#hideButton');
 // console.log(buttonDisappear);
 const buttonShow = document.querySelector('#showButton');
@@ -11,7 +11,7 @@ buttonShow.addEventListener('click', function () {
 
     let inputValue = inputTag.value;
 
-    for (let i = 11; i < allImages.length; i++) {
+    for (let i = 0; i < allImages.length; i++) {
         let imageTags = allImages[i].dataset.tag;
         let ifExist = imageTags.indexOf(inputValue);
         if (ifExist !== -1 && allImages[i].className === 'invisible') {

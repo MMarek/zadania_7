@@ -6,7 +6,7 @@ const listWithTask = document.getElementById('taskList');
 console.log(listWithTask);
 const buttonToRemoveDoneTasks = document.getElementById('removeFinishedTasksButton');
 console.log(buttonToRemoveDoneTasks);
-const counterTasks = document.getElementById('counter');
+const counterTasks = document.getElementById('.counter');
 console.log(counterTasks);
 
 let counter = 0;
@@ -21,9 +21,9 @@ buttonToAddTask.addEventListener('click', function () {
         const newTask = document.createElement('li');
         listWithTask.appendChild(newTask);
 
-        const mewHeadling = document.createElement('h1');
-        mewHeadling.innerText = inputWithTask.value;
-        newTask.appendChild(mewHeadling);
+        const newHeadling = document.createElement('h1');
+        newHeadling.innerText = inputWithTask.value;
+        newTask.appendChild(newHeadling);
 
         const buttonDelete = document.createElement('button');
         buttonDelete.innerText = 'Delete';
@@ -47,12 +47,28 @@ buttonToAddTask.addEventListener('click', function () {
         });
 
         buttonDelete.addEventListener('click', function () {
+
+            newTask.parentElement.removeChild(newTask);
+            counter -= 1;
+            counterTasks.innerText = 'Nuber of tasks: ' + counter;
+
+            // if (newTask.classList.contains('taskDone')) {
+            //     newTask.parentElement.removeChild(newTask);
+            //     counter -= 1;
+            //     counterTasks.innerText = 'Number of tasks: ' + counter;
+            // }
+        });
+
+        buttonToRemoveDoneTasks.addEventListener('click', function () {
+
             if (newTask.classList.contains('taskDone')) {
                 newTask.parentElement.removeChild(newTask);
+
                 counter -= 1;
                 counterTasks.innerText = 'Number of tasks: ' + counter;
             }
-        })
+        });
     }
+
 inputWithTask.value = '';
 });
